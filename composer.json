@@ -1,0 +1,24 @@
+{
+  "name": "romainrhd/installer",
+  "description": "Installeur de projet web.",
+  "keywords": ["laravel", "composer", "docker", "installer"],
+  "authors": [
+    {
+      "name": "Romain RICHARD",
+      "email": "romain.richard.19@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CommandeMagique\\Installer\\Console\\": "src/"
+    }
+  },
+  "require": {
+    "ext-zip": "*",
+    "guzzlehttp/guzzle": "~6.0",
+    "symfony/console": "~3.0|~4.0"
+  },
+  "bin": [
+    "magique"
+  ]
+}
