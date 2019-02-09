@@ -35,6 +35,8 @@ class InstallerCommand extends Command
         $this->download($zipFile = $this->makeFilename())
              ->extract($zipFile, $input->getArgument('name'))
              ->cleanUp($zipFile);
+
+        $output->writeln('<comment>Application ready! Build something amazing.</comment>');
     }
 
     /**
